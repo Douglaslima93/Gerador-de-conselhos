@@ -1,4 +1,8 @@
 const conselho = document.querySelector('#msg')
+const advice = document.querySelector('#advice')
+
+advice.style.color = 'hsl(150, 100%, 66%)'
+conselho.style.color = 'hsl(193, 38%, 86%)'
 
 function botao() {
     fetch('https://api.adviceslip.com/advice')
@@ -7,25 +11,12 @@ function botao() {
 })
 
 .then(function(data){
-    conselho.innerHTML = data.slip.advice
+    advice.innerHTML = `ADVICE # ${data.slip.id}`
+    conselho.innerHTML = `"${data.slip.advice}"`
+    
 })
-
 }
 
 
 
 
-
-
-
-
-/*
-function fetchApiData() {
-    fetch('https://api.adviceslip.com/advice')
-    .then(response => response.json())
-    .then(data => {
-        const li = document.querySelector('#msg')
-        data.map(() => {} )
-
-    })
-}*/
