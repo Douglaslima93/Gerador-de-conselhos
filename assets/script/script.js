@@ -13,7 +13,6 @@ function botao() {
 .then(function(data){
     advice.innerHTML = `ADVICE # ${data.slip.id}`
     conselho.innerHTML = `"${data.slip.advice}"`
-    
 })
 }
 
