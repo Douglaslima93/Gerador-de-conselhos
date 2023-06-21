@@ -90,3 +90,47 @@ main{
     }
 }
 
+@media screen and (max-width: 768px) {
+    .container-menagem {
+        width: 90%;
+        height: 50vh;
+    }
+
+    #advice{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    #msg {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .pattern-img {
+        background-image: url('../img/pattern-divider-mobile.svg');
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container-menagem {
+        width: 90%;
+        height: 50vh;
+    }
+
+    #advice{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    #msg {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .pattern-img {
+        background-image: url('../img/pattern-divider-mobile.svg');
+        height: 5vh;
+    }
+}
+
